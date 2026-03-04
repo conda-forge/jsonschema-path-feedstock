@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.4.4"
+  version: "0.4.5"
   python_check_max: "3.14"
 
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jsonschema-path/jsonschema_path-${{ version }}.tar.gz
-  sha256: 4c55842890fc384262a59fb63a25c86cc0e2b059e929c18b851c1d19ef612026
+  sha256: c6cd7d577ae290c7defd4f4029e86fdb248ca1bd41a07557795b3c95e5144918
 
 build:
   number: 0
