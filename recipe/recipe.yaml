@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.4.6"
+  version: "0.5.0"
   python_check_max: "3.14"
 
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jsonschema-path/jsonschema_path-${{ version }}.tar.gz
-  sha256: c89eb635f4d497c9ac328eeff359c489755838806a7d033510a692e9576f5c4b
+  sha256: 493b156ba895c97602655b620a8456caa2ce08c1aa389f5a7addec065e6e855c
 
 build:
   number: 0
@@ -26,7 +26,8 @@ requirements:
     - poetry-core >=1.0.0
     - python ${{ python_min }}.*
   run:
-    - pathable >=0.5.0,<0.6.0
+    - attrs >=22.2.0
+    - pathable >=0.6.0,<0.7.0
     - python >=${{ python_min }}
     - pyyaml >=5.1
     - referencing <0.38.0
